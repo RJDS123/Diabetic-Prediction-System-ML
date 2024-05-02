@@ -1,0 +1,161 @@
+/* home.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .home-container {
+    text-align: center;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0275d8;
+    color: white;
+  }
+  
+  .nav-logo a, .nav-items a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  .nav-item:hover, .nav-logo a:hover {
+    background-color: #025aa5;
+    border-radius: 5px;
+  }
+  
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .hero-text h1 {
+    color: #333;
+    font-size: 2.5rem;
+  }
+  
+  .hero-text p {
+    color: #666;
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    color: white;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;  /* Darken button on hover */
+    text-decoration: none;  /* Ensure underline does not reappear on hover */
+  }
+
+  .features {
+    padding: 20px;
+    background: white;
+  }
+  
+  .feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .feature-card {
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  .feature-card h3 {
+    color: #0275d8;
+  }
+  
+  .home-footer {
+    padding: 10px 20px;
+    background-color: #0275d8;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section, .feature-cards {
+      flex-direction: column;
+    }
+  
+    .feature-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow: hidden; /* Ensures no spillover of content */
+  }
+  
+  .hero-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .hero-image {
+    flex: 1;
+    overflow: hidden; /* Clip the boundaries of the content */
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .hero-text h1 {
+    color: #333;
+    font-size: 2.5rem;
+  }
+  
+  .hero-text p {
+    color: #666;
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    color: white;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+    }
+  
+    .hero-image img {
+      max-height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+  
